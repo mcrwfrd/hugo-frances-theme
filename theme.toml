@@ -3,19 +3,13 @@
 
 name = "Artist Portfolio"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+licenselink = "https://github.com/mcrwfrd/hugo-artist-portfolio/blob/master/LICENSE"
+description = "A custom theme for artists, including a blog and single pages for bio and contact"
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Michael Crawford"
+  homepage = "https://crawford.io"
