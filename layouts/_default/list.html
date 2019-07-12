@@ -19,9 +19,9 @@
         <div class="col-md-8">
           {{ range .Data.Pages }} 
             <section class="section pt-1">
-              <h4 class=""><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
+              <h4 class=""><a class="text-dark" href="{{.Permalink}}">{{ .Title }}</a>
               </h4>
-              <p class="cars-text">{{.Summary}}</p>
+              <p class="cars-text">{{ .Summary }}</p>
             </section>
           {{ end }}
         </div>

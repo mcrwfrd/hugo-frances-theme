@@ -19,13 +19,55 @@
         <div class="col-md-8">
           {{ .Content }}
         </div>
-        <div class="col-md-4 text-center drag-lg-top">
-          <div class="shadow-down mb-4">
-          </div>
-        </div>
       </div>
     </div>
   </section>
   <!-- /about -->
 
+  <!-- about -->
+  <section class="section pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+        </div>
+
+        <div class="col-md-6">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              {{ range $.Site.Data.bioPhotos.bioPhotos }}
+                <div class="carousel-item" data-interval="10000">
+                  <img src="{{ .photo }}" class="d-block w-100" alt="...">
+                </div>
+              {{ end }}
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  <script>
+    $(document).ready(function () {
+      $('#myCarousel').find('.carousel-item').first().addClass('active');
+    });
+  </script>
 {{ end }}

@@ -2,8 +2,7 @@
 title: "The Day I Met Emily Carr"
 date: 2019-05-12T12:14:34+06:00
 image: "images/blog/post-5.jpg"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua."
+summary: "sup"
 type: "post"
 ---
 
