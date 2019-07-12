@@ -18,16 +18,12 @@
       <div class="row">
         <div class="col-md-8">
           {{ range .Data.Pages }} 
+            <section class="section pt-1">
               <h4 class=""><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
               </h4>
               <p class="cars-text">{{.Summary}}</p>
-              <a href="{{.Permalink}}" class="btn btn-xs btn-primary">Read More</a>
-            {{ end }}
-        </div>
-        <div class="col-md-4 text-center drag-lg-top">
-          <div class="shadow-down mb-4">
-          </div>
-          <h4>{{ .Params.Author }}</h4>
+            </section>
+          {{ end }}
         </div>
       </div>
     </div>
