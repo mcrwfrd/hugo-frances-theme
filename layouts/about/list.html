@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+  <!-- page title -->
+  <section class="page-title-alt position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="font-tertiary mt-5">{{ .Title }}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /page title -->
+
+  <!-- about -->
+  <section class="section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {{ .Content }}
+        </div>
+        <div class="col-md-4 text-center drag-lg-top">
+          <div class="shadow-down mb-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+{{ end }}
