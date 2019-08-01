@@ -10,7 +10,8 @@
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
+	/*height: 250px;*/
+	height: auto;
 }
 
 .og-grid li > a,
@@ -19,6 +20,8 @@
 	outline: none;
 	display: block;
 	position: relative;
+	max-width: 100%;
+	height: auto;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -49,7 +52,8 @@
 
 .og-expander-inner {
 	padding: 50px 30px;
-	height: 100%;
+	/*height: 100%;*/
+	height: auto;
 }
 
 .og-close {
@@ -188,8 +192,6 @@
 }
 
 @media screen and (max-width: 650px) {
-
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
-	
 }

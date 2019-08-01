@@ -9,7 +9,8 @@
 					data-mediums="{{ .mediums }}"
 					data-dimensions="{{ .dimensions }}"
 					data-description="{{ .description }}">
-					<img src="{{ .thumb }}" alt="{{ .alt }}"/>
+					<img class="d-none d-sm-block" src="{{ .thumb }}" alt="{{ .alt }}">
+					<img class="d-block d-sm-none" src="{{ .image }}" alt="{{ .alt }}">
 				</a>
 			</li>
 		{{ end }}
