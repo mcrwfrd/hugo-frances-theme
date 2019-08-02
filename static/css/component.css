@@ -52,8 +52,7 @@
 
 .og-expander-inner {
 	padding: 50px 30px;
-	/*height: 100%;*/
-	height: auto;
+	height: 100%;
 }
 
 .og-close {
@@ -194,4 +193,5 @@
 @media screen and (max-width: 650px) {
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
+	.og-expander-inner { height: auto; }
 }
