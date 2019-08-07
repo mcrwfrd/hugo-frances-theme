@@ -4,18 +4,7 @@ languageCode = "en-us"
 sectionPagesMenu = "main"
 
 [params]
-	name = "Your name"
-	description = "Your description"
-	email = "your@email.com"
-	author = "Pablo Picasso"
-
-	[params.about]
-		title = "About me"
-		bio = ""
-
-	[params.contact]
-		title = "Contact"
-		text = "Write a sentence or two here to invite people to reach out to you over email or Instagram."
-		[[params.contact.social]]
-			icon = "instagram"
-			link = "//www.linkedin.com/in/travisneilson"
+	name = "Frances Hodgkins"
+	description = "Landscape and still-life painter from New Zealand"
+	email = "frances@hodgkins.io"
+	author = "Frances Hodgkins"
