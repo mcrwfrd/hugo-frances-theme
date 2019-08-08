@@ -244,8 +244,6 @@ var Grid = (function() {
            return false;
         }).children('a').on('click', function(e) {
             var $item = $(this).parent();
-            console.log($item.index());
-            console.log(current);
             current === $item.index() ? hidePreview() : showPreview($item);
             return false;
         });
