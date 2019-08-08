@@ -6,7 +6,12 @@
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
-        <!-- {{- partial "footer.html" . -}} -->
-        {{- partial "scripts.html" . -}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/grid.js?v=0.1.7"></script>
+        <script>
+            $(function() {
+                Grid.init();
+            });
+        </script>
     </body>
 </html>
