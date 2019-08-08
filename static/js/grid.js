@@ -297,7 +297,9 @@ var Grid = (function() {
         create : function() { // need to add dimensions and mediums here
             this.$title = $('<h3></h3>');
             this.$description = $('<p></p>');
-            this.$details = $('<div class="og-details"></div>').append(this.$title, this.$description);
+            this.$mediums = $('<p></p>');
+            this.$dimensions = $('<p></p>');
+            this.$details = $('<div class="og-details"></div>').append(this.$title, this.$description, this.$mediums, this.$dimensions);
             this.$loading = $('<div class="og-loading"></div>');
             this.$fullimage = $('<div class="og-fullimg"></div>').append(this.$loading);
             this.$closePreview = $('<span class="og-close"></span>');
@@ -333,10 +335,14 @@ var Grid = (function() {
                     largesrc : $itemElement.data('largesrc'),
                     title : $itemElement.data('title'),
                     description : $itemElement.data('description'),
+                    mediums : $itemElement.data('mediums'),
+                    dimensions : $itemElement.data('dimensions')
                 };
 
             this.$title.html(elementData.title);
             this.$description.html(elementData.description);
+            this.$mediums.html(elementData.mediums);
+            this.$dimensions.html(elementData.dimensions);
 
             var self = this;
 
