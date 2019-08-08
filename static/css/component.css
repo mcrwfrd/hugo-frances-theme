@@ -40,7 +40,7 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: white;
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -139,7 +139,7 @@
 }
 
 .og-details a::before {
-	content: '\2192';
+	/*content: '\2192';*/
 	display: inline-block;
 	margin-right: 10px;
 }
@@ -153,7 +153,7 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: #ddd;
+	background: #f8f9fa;
 	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
 	position: absolute;
 	top: 50%;
@@ -165,21 +165,21 @@
 }
 
 @-webkit-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+	0% { background: #f8f9fa; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #f8f9fa; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #f8f9fa, -15px 30px 1px #ccc; }
 }
 
 @-moz-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+	0% { background: #f8f9fa; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #f8f9fa; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #f8f9fa, -15px 30px 1px #ccc; }
 }
 
 @keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+	0% { background: #f8f9fa; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #f8f9fa; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #f8f9fa, -15px 30px 1px #ccc; }
 }
 
 @media screen and (max-width: 830px) {

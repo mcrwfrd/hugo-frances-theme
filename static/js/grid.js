@@ -184,7 +184,7 @@ var Grid = (function() {
         support = Modernizr.csstransitions,
         settings = {
             minHeight : 500,
-            speed : 350,
+            speed : 250,
             easing : 'ease'
         };
 
@@ -425,26 +425,17 @@ var Grid = (function() {
             }
         },
         positionPreview : function() {
-            // var position = this.$item.data('offsetTop'),
-            //     previewOffsetTop = this.$previewElement.offset().top - scrollExtra,
-            //     scrollValue = this.height + this.$item.data('height');
-            //
-            //     if (marginExpanded <= winSize.height) {
-            //         scrollValue += position;
-            //     } else if (this.height < winSize.height) {
-            //         scrollValue += previewOffsetTop - (winSize.height - this.height)
-            //     } else {
-            //         scrollValue += previewOffsetTop;
-            //     }
+            var position = this.$item.data('offsetTop'),
+                previewOffsetTop = this.$previewElement.offset().top - scrollExtra,
+                scrollValue = this.height + this.$item.data('height');
 
-            // scroll page
-            // case 1 : preview height + item height fits in window´s height
-            // case 2 : preview height + item height does not fit in window´s height and preview height is smaller than window´s height
-            // case 3 : preview height + item height does not fit in window´s height and preview height is bigger than window´s height
-            var position = this.$item.data( 'offsetTop' ),
-                previewOffsetT = this.$previewElement.offset().top - scrollExtra,
-                scrollValue = this.height + this.$item.data( 'height' ) + marginExpanded <= winSize.height ? position : this.height < winSize.height ? previewOffsetT - ( winSize.height - this.height ) : previewOffsetT;
-
+                if (marginExpanded <= winSize.height) {
+                    scrollValue = position;
+                } else if (this.height < winSize.height) {
+                    scrollValue = previewOffsetTop - (winSize.height - this.height)
+                } else {
+                    scrollValue = previewOffsetTop;
+                }
 
             $body.animate({scrollTop : scrollValue}, settings.speed);
         },
