@@ -294,7 +294,7 @@ var Grid = (function() {
     }
 
     Preview.prototype = {
-        create : function() { // need to add dimensions and mediums here
+        create : function() {
             this.$title = $('<h3></h3>');
             this.$description = $('<p></p>');
             this.$mediums = $('<p></p>');
@@ -431,17 +431,9 @@ var Grid = (function() {
             }
         },
         positionPreview : function() {
-            var position = this.$item.data('offsetTop'),
+            var position = this.$item.data( 'offsetTop' ),
                 previewOffsetTop = this.$previewElement.offset().top - scrollExtra,
-                scrollValue = this.height + this.$item.data('height');
-
-                if (marginExpanded <= winSize.height) {
-                    scrollValue = position;
-                } else if (this.height < winSize.height) {
-                    scrollValue = previewOffsetTop - (winSize.height - this.height)
-                } else {
-                    scrollValue = previewOffsetTop;
-                }
+                scrollValue = this.height + this.$item.data( 'height' ) + marginExpanded <= winSize.height ? position : this.height < winSize.height ? previewOffsetTop - ( winSize.height - this.height ) : previewOffsetTop;
 
             $body.animate({scrollTop : scrollValue}, settings.speed);
         },
