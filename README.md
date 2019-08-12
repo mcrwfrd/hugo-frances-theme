@@ -10,13 +10,13 @@ Frances is an expanding grid portfolio theme built with Bootstrap for Hugo, name
 Inside your Hugo site, run the following to clone the Frances theme into `themes/frances`: 
 
 ```bash
-cd themes
+cd /your/project/root/themes
 git clone https://github.com/mcrwfrd/hugo-frances-theme.git frances
 ```
 
 # Configuration
 
-Inside the theme repository, you'll find a file called `congif.toml`. Copy this file to the root of your Hugo site, and customize it as you see fit. Mostly you'll want to change the name and email address here to match your own. 
+Inside `themes/frances`, you'll find a file called `congif.toml`. Copy this file to the root of your Hugo site, and customize it as you see fit. Mostly you'll want to change the name and email address here to match your own. 
 
 Additionally, in order to use this theme with your Hugo site, you need to add the following line to your own `config.toml` file: 
 
