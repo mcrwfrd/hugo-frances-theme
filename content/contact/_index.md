@@ -6,4 +6,4 @@ authorImage : "images/about/author.jpg"
 type: "post"
 ---
 
-Write a sentence or two here to invite people to reach out to you over email or Instagram.
+Nunc nec bibendum ipsum. Pellentesque pretium tristique magna sed condimentum. Phasellus vitae nulla a turpis lobortis lobortis. Nulla a ipsum sem. Aenean malesuada, eros ut cursus cursus, turpis nulla auctor ex, finibus sodales enim odio ac ex. Vivamus lectus felis, sollicitudin sed vestibulum sit amet, egestas dignissim metus. Praesent suscipit accumsan enim eget viverra.
