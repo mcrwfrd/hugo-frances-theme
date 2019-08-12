@@ -3,3 +3,5 @@ Frances is an expanding grid portfolio theme built with Bootstrap for Hugo, name
 
 ![Frances screenshot](https://raw.githubusercontent.com/mcrwfrd/hugo-frances-theme/master/images/tn.png)
 
+![Frances screenshot expanded](https://raw.githubusercontent.com/mcrwfrd/hugo-frances-theme/master/images/tn-expanded.png)
+
